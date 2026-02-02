@@ -8,6 +8,8 @@ output:
       in_header: preamble.tex
 ---
 
+<!-- Autora: Evelia Coss, Fecha: 2 de febrero, 2026 -->
+
 <!-- Portada-->
 
 \thispagestyle{empty} 
@@ -20,6 +22,8 @@ output:
 \tableofcontents
 
 \newpage
+
+<!-- Cargar datos y paquetes-->
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(googlesheets4) # Leer la hoja completa 
@@ -364,7 +368,6 @@ for(nombre_grupo in names(grupos_posters)){
 
 \newpage
 
-<!-- Logo con agradecimientos del equipo -->
 
 \begin{flushbottom}
 \vspace*{\fill}
@@ -376,8 +379,6 @@ for(nombre_grupo in names(grupos_posters)){
 }
 \end{center}
 \vspace*{\fill}
-
-<!-- Pie de pagina con agradecimientos -->
 
 \begin{center}
 \small
