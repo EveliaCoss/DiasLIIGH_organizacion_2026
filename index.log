@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.30)  2 FEB 2026 12:45
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.30)  2 FEB 2026 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,6 +1118,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 287.
+LaTeX Font Info:    Font shape `TU/Arial(0)/b/it' will be
+(Font)              scaled to size 10.0pt on input line 290.
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1158,10 +1160,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [10]
-Underfull \hbox (badness 1033) in paragraph at lines 387--392
-\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1192,6 +1190,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [13]
+Underfull \hbox (badness 1033) in paragraph at lines 393--398
+\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
+ []
+
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1212,10 +1214,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [15]
-Underfull \hbox (badness 1092) in paragraph at lines 475--480
-\TU/Arial(0)/m/n/10 9: Université Paris-Saclay, CNRS, INRIA, Laboratoire Interdisciplinaire des Sciences du
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1256,6 +1254,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [19]
+Underfull \hbox (badness 1092) in paragraph at lines 487--492
+\TU/Arial(0)/m/n/10 9: Université Paris-Saclay, CNRS, INRIA, Laboratoire Interdisciplinaire des Sciences du
+ []
+
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1296,22 +1298,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [23]
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 634.
-LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 638.
-
-Overfull \hbox (1.77382pt too wide) in paragraph at lines 638--638
- []|\TU/Arial(0)/b/n/8 Número|
- []
-
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 653.
-
-Overfull \hbox (33.48904pt too wide) in alignment at lines 636--680
- [] [] [] [] 
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1322,15 +1308,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [24]
-Overfull \hbox (1.77382pt too wide) in paragraph at lines 691--691
- []|\TU/Arial(0)/b/n/8 Número|
- []
-
-
-Overfull \hbox (33.48904pt too wide) in alignment at lines 689--735
- [] [] [] [] 
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1371,8 +1348,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [28]
-Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1393,6 +1368,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [30]
+LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 657.
+LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 661.
+
+Overfull \hbox (1.77382pt too wide) in paragraph at lines 661--661
+ []|\TU/Arial(0)/b/n/8 Número|
+ []
+
+LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 676.
+
+Overfull \hbox (33.48904pt too wide) in alignment at lines 659--703
+ [] [] [] [] 
+ []
+
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1403,8 +1394,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [31]
-Underfull \hbox (badness 1033) in paragraph at lines 877--883
-\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
+Overfull \hbox (1.77382pt too wide) in paragraph at lines 714--714
+ []|\TU/Arial(0)/b/n/8 Número|
+ []
+
+
+Overfull \hbox (33.48904pt too wide) in alignment at lines 712--758
+ [] [] [] [] 
  []
 
 File: logo.png Graphic file (type bmp)
@@ -1427,10 +1423,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [33]
-Underfull \hbox (badness 1033) in paragraph at lines 928--936
-\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1461,6 +1453,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [36]
+Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ₂ (U+2082) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1511,10 +1505,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [41]
-Underfull \hbox (badness 1087) in paragraph at lines 1090--1096
-\TU/Arial(0)/b/n/10 Analysis of a deeply-phenotyped familial hypercholesterolemia cohort from Mexico
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1525,6 +1515,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [42]
+Underfull \hbox (badness 1033) in paragraph at lines 900--905
+\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
+ []
+
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1535,10 +1529,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [43]
-Underfull \hbox (badness 1515) in paragraph at lines 1126--1136
-[]\TU/Arial(0)/b/n/10 Poster 32: Identificación taxonómica de murciélago desconocido utilizando datos
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1549,15 +1539,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [44]
-Underfull \hbox (badness 1540) in paragraph at lines 1146--1152
-\TU/Arial(0)/m/n/10 Sotelo (7), Maximiliano Bustamante Lira (2), Walter Nicolás-Ortega (1,2), Miguel Angel
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 1146--1152
-\TU/Arial(0)/m/n/10 12: Laboratoire Interdisciplinaire des Sciences du Numérique, CNRS, INRIA, Université
- []
-
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1578,6 +1559,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [46]
+Underfull \hbox (badness 1033) in paragraph at lines 951--958
+\TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
+ []
+
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1598,8 +1583,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [48]
-Missing character: There is no   (U+202F) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ‑ (U+2011) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1632,10 +1615,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [51]
 File: logo.png Graphic file (type bmp)
 <logo.png>
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1260.
-LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 1262.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[52]
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1645,19 +1632,211 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
-[52] (./index.aux)
+[53]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[54]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[55]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[56]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[57]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[58]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[59]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[60]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[61]
+Underfull \hbox (badness 1515) in paragraph at lines 1149--1158
+[]\TU/Arial(0)/b/n/10 Poster 32: Identificación taxonómica de murciélago desconocido utilizando datos
+ []
+
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[62]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[63]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[64]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[65]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[66]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[67]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[68]
+Missing character: There is no   (U+202F) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ‑ (U+2011) in font Arial/OT:script=latn;language=dflt;mapping=tex-text;!
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[69]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[70]
+File: logo.png Graphic file (type bmp)
+<logo.png>
+LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1283.
+LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 1285.
+File: logo.png Graphic file (type bmp)
+<logo.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.45168pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.45168pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
+
+[71] (./index.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18967 strings out of 470190
- 343986 string characters out of 5478034
+ 18969 strings out of 470190
+ 344069 string characters out of 5478034
  920852 words of memory out of 5000000
- 47274 multiletter control sequences out of 15000+600000
- 631476 words of font info for 87 fonts, out of 8000000 for 9000
+ 47275 multiletter control sequences out of 15000+600000
+ 631484 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,12n,116p,2317b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,116p,2360b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (52 pages).
+Output written on index.pdf (71 pages).

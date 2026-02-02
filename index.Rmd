@@ -213,6 +213,12 @@ for(nombre_grupo in unique(oral_abstracts$Group)){
     abstract_text <- gsub("\r|\n", " ", df$Abstract[i])
     # Aplicar escape_latex al abstract completo 
     abstract_text <- escape_latex(abstract_text)
+    # Primero convertir *texto* en \textit{texto} 
+    abstract_text <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", abstract_text)
+
+    # También aplicar al título 
+    title_text <- escape_latex(df$Title[i]) 
+    title_text <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", title_text)
     
     # Procesar afiliaciones: separar por número 
     affiliations_raw <- df$Affiliations[i] 
@@ -229,7 +235,7 @@ for(nombre_grupo in unique(oral_abstracts$Group)){
     
     bloque <- paste0(
       "\\begin{quote}\n",
-      "\\textbf{", escape_latex(df$Title[i]), "} \\\\ \n",
+      "\\textbf{", title_text, "} \\\\ \n",
       "\\textit{Presenter: }", escape_latex(df$Presenter[i]), "\\\\ \n",
       "\\textit{Authors: }", escape_latex(df$Authors[i]), "\\\\ \n",
       "\\textit{Affiliations: } \\\\ \n",
@@ -237,7 +243,8 @@ for(nombre_grupo in unique(oral_abstracts$Group)){
       "\n",
       "\\textit{Abstract: } \\\\ \n",
       abstract_text, "\n",
-      "\\end{quote}\n\n"
+      "\\end{quote}\n",
+      "\\newpage\n\n" # <-- salto de página al final de cada bloque
     )
     cat(knitr::asis_output(bloque))
   }
@@ -332,7 +339,15 @@ for(nombre_grupo in names(grupos_posters)){
     abstract_text <- gsub("\r|\n", " ", df$Abstract[i])
     # Aplicar escape_latex al abstract completo 
     abstract_text <- escape_latex(abstract_text)
+    # Primero convertir *texto* en \textit{texto} 
+    abstract_text <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", abstract_text)
+
     
+    # También aplicar al título 
+    title_text <- escape_latex(df$Title[i])
+    title_text <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", title_text) 
+    
+  
     # Procesar afiliaciones: separar por número 
     affiliations_raw <- df$Affiliations[i] 
     # Dividir por punto y coma 
@@ -348,8 +363,7 @@ for(nombre_grupo in names(grupos_posters)){
     
     bloque <- paste0(
       "\\begin{quote}\n",
-      "\\textbf{Poster ", df$PosterNumber[i], ": ", df$Title[i], "} \\\\ \n",
-      "\\textbf{", df$Title[i], "} \\\\ \n",
+      "\\textbf{Poster ", df$PosterNumber[i], ": ", title_text, "} \\\\ \n",
       "\\textit{Presenter: }", df$Presenter[i], "\\\\ \n",
       "\\textit{Authors: }", df$Authors[i], "\\\\ \n",
       "\\textit{Affiliations: } \\\\ \n",
@@ -357,7 +371,8 @@ for(nombre_grupo in names(grupos_posters)){
       "\n",
       "\\textit{Abstract: } \\\\ \n",
       abstract_text, "\n",
-      "\\end{quote}\n\n"
+      "\\end{quote}\n",
+      "\\newpage\n\n" # <-- salto de página al final de cada bloque
     )
     cat(knitr::asis_output(bloque))
   }
