@@ -364,6 +364,8 @@ for(nombre_grupo in names(grupos_posters)){
 
 \newpage
 
+<!-- Logo con agradecimientos del equipo -->
+
 \begin{flushbottom}
 \vspace*{\fill}
 \begin{center}
@@ -375,11 +377,12 @@ for(nombre_grupo in names(grupos_posters)){
 \end{center}
 \vspace*{\fill}
 
+<!-- Pie de pagina con agradecimientos -->
 
 \begin{center}
 \small
 \textit{Este libro de códigos fue realizado por Dra. Evelia Lorena Coss Navarrete, con ayuda de Copilot Microsoft.  
-El código se encuentra disponible libremente en el repositorio \href{https://github.com/usuario/repositorio}{GitHub X}.}
+El código se encuentra disponible libremente en el repositorio \href{https://github.com/EveliaCoss/DiasLIIGH_organizacion_2026}{GitHub DiasLIIGH_organizacion_2026}.}
 \end{center}
 \end{flushbottom}
 
