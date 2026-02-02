@@ -1,0 +1,386 @@
+---
+output:
+  bookdown::pdf_book:
+    number_sections: false
+    toc: false
+    latex_engine: xelatex 
+    includes: 
+      in_header: preamble.tex
+---
+
+<!-- Portada-->
+
+\thispagestyle{empty} 
+\begin{center}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{portada.jpeg}
+\end{center}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(googlesheets4) # Leer la hoja completa 
+url <- "https://docs.google.com/spreadsheets/d/1hYW6SBrx5sdkNRPOU3al6SjYELW1x4doU9S4TSiwkwI/edit?usp=sharing" 
+
+# paquetes
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(stringr)
+```
+
+## Comité organizador
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+organizadores <- read_sheet(url, sheet = "Organizadores")
+kable(organizadores, format = "latex", booktabs = TRUE) %>%
+  #kable_styling(latex_options = c("hold_position"))
+   kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Objetivo de los Días académicos del LIIGH-UNAM
+
+La **tercera edición de los Días Académicos del LIIGH-UNAM**, que se llevará a cabo los días **5 y 6 de febrero de 2026**, tiene como propósito principal **difundir las investigaciones desarrolladas en el Laboratorio Internacional de Investigación sobre el Genoma Humano**.
+
+Durante estas jornadas se presentarán **conferencias representativas de todos los grupos de investigación activos**, en las que se compartirán los avances más recientes en sus respectivas áreas. Entre las líneas de trabajo que actualmente se desarrollan en el LIIGH destacan: **genómica de poblaciones, genética del cáncer, paleogenómica, biología de sistemas, medicina de precisión, estadística, bioinformática, ecología y evolución**.
+
+Además, el programa incluye **dos sesiones de pósters académicos**, elaborados por estudiantes de distintos niveles de formación y por posdoctorantes que realizan actividades de investigación en nuestra entidad, fortaleciendo así la participación y el intercambio académico en todos los niveles.
+
+![Imagen representativa. Te esperamos para la Foto grupal el viernes 6 de febrero, 2026 a las 12:30 h](foto_grupo.jpg){width=300}
+
+\newpage
+
+## Programa académico
+
+Jueves 5 de febrero, 2026
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+actividades_D1 <- read_sheet(url, sheet = "Programa_D1")
+actividades_D1 <- actividades_D1 %>%
+  dplyr::mutate(Horario = format(Horario, "%H:%M"))
+
+kable(actividades_D1, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  # Ajustar ancho de la segunda columna (ej. 8cm) 
+  column_spec(2, width = "8cm") %>%
+    # Negritas en columnas
+  row_spec(0, bold = T) %>%
+  # Grupos de investigacion
+  row_spec(c(4,9,13,16,19), bold = T, color = "white", background = "#045a8d") %>%
+   # Secciones importantes, poster y lunch
+  row_spec(c(1, 12,22), background = "gray!15") %>%  
+  # Poster
+  row_spec(8, bold = T, color = "black", background = "#fec44f") 
+
+```
+
+\newpage
+
+Viernes 6 de febrero, 2026
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+actividades_D2 <- read_sheet(url, sheet = "Programa_D2")
+actividades_D2 <- actividades_D2 %>%
+  dplyr::mutate(Horario = format(Horario, "%H:%M"))
+
+kable(actividades_D2, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  # Ajustar ancho de la segunda columna (ej. 8cm) 
+  column_spec(2, width = "8cm") %>%
+  # Negritas en columnas
+  row_spec(0, bold = T) %>%
+  # Grupos de investigacion
+  row_spec(c(2,6,9,13, 18, 22), bold = T, color = "white", background = "#045a8d") %>%
+  # Secciones importantes y lunch
+  row_spec(c(1,17,24), background = "gray!15") %>%
+  # foto grupal
+  row_spec(16, background = "#9ecae1") %>%
+  # Poster
+  row_spec(12, bold = T, color = "black", background = "#fec44f")
+
+
+```
+
+\newpage
+
+## Evento social
+  
+Con el objetivo de fortalecer la convivencia y crear espacios de esparcimiento, se han preparado dinámicas variadas que invitan a la participación de todos. Desde el deporte y la competencia amistosa, hasta los juegos de estrategia y creatividad, cada actividad busca generar momentos de diversión y colaboración.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+eventoSocial <- read_sheet(url, sheet = "EventoSocial")
+eventoSocial_table <- eventoSocial %>%
+  dplyr::mutate(Horario = format(Horario, "%H:%M")) %>% 
+  # quitar especificaciones
+  dplyr::select(-Especificaciones)
+
+kable(eventoSocial_table, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("hold_position")) %>%
+  # Ajustar ancho de la segunda columna (ej. 8cm) 
+  column_spec(1, width = "1cm") %>% # Horario
+  column_spec(2, width = "4cm") %>% # Nombre de la actividad
+  column_spec(3, width = "3cm") %>% # Ubicación
+  column_spec(4, width = "5cm") %>% # Responsable
+  # column_spec(5, width = "5cm") %>% # Especificaciones
+    # Negritas en columnas
+  row_spec(0, bold = T) %>% 
+  # Colores
+  # Colores básicos: "red", "blue", "green", "yellow", "black", "white", "gray", "cyan", "magenta".
+# Variantes definidas por xcolor: "lightgray", "darkgray", "brown", "lime", "olive", "orange", "pink", "purple", "teal", "violet".
+  # Secciones importantes, poster y lunch
+  row_spec(c(2,4), background = "gray!15") 
+
+```
+
+### Especificaciones
+
+```{r, results='asis',, echo=FALSE, warning=FALSE, message=FALSE}
+for(i in 1:nrow(eventoSocial)){
+  bloque <- paste0(
+    "\\textbf{", eventoSocial$`Nombre de la actividad`[i], "}: ",
+    eventoSocial$Especificaciones[i], "\n\n"
+  )
+  cat(knitr::asis_output(bloque))
+}
+
+```
+
+
+\newpage
+
+## Resumen de las Presentaciones orales
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+escape_latex <- function(x) {
+  # Escapar símbolos especiales de LaTeX
+  x <- gsub("%", "\\\\%", x)   
+  x <- gsub("_", "\\\\_", x)
+  x <- gsub("&", "\\\\&", x)
+  x <- gsub("#", "\\\\#", x)
+  x <- gsub("\\$", "\\\\$", x)
+  x <- gsub("\\{", "\\\\{", x)
+  x <- gsub("\\}", "\\\\}", x)
+  # Si quieres mostrar un backslash literal, puedes dejar esta línea,
+  # pero ojo: no la uses si no es necesario en abstracts
+  # x <- gsub("\\\\", "\\\\textbackslash{}", x)
+  return(x)
+}
+
+
+```
+
+
+```{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+# Cargar base de abstracts
+abstracts <- read_sheet(url, sheet = "Abstracts")
+
+# solo platicas
+oral_abstracts <- abstracts %>% 
+  filter(Participation =="Oral presentation")
+
+# Ordenar por la columna Order antes de dividir en grupos 
+oral_abstracts <- oral_abstracts %>% arrange(Order)
+
+# Dividir por grupos 
+grupos <- split(oral_abstracts, oral_abstracts$Group)
+
+# Iterar en el orden de aparición (según Order)
+for(nombre_grupo in unique(oral_abstracts$Group)){
+  df <- grupos[[nombre_grupo]]
+  
+  # Extraer laboratorio y responsable
+  lab <- trimws(sub("\\(.*\\)", "", nombre_grupo))  # texto antes del paréntesis
+  responsable <- sub(".*\\((.*)\\)", "\\1", nombre_grupo) # texto dentro del paréntesis
+  
+  # Imprimir encabezado
+  cat(knitr::asis_output(paste0(
+    "\\section*{", escape_latex(lab), "} \n",
+    "\\textit{Responsable: ", escape_latex(responsable), "} \n\n"
+  )))
+  
+  # Iterar sobre los abstracts de ese grupo en el orden correcto
+  for(i in 1:nrow(df)){
+    
+    # Limpieza de saltos de línea para evitar cortes 
+    abstract_text <- gsub("\r|\n", " ", df$Abstract[i])
+    # Aplicar escape_latex al abstract completo 
+    abstract_text <- escape_latex(abstract_text)
+    
+    # Procesar afiliaciones: separar por número 
+    affiliations_raw <- df$Affiliations[i] 
+    # Dividir por punto y coma 
+    affiliations_split <- unlist(strsplit(affiliations_raw, ";")) 
+   # Limpiar espacios a
+    ffiliations_split <- trimws(affiliations_split)
+    # Reemplazar ; por . (ya que hicimos split, solo agregamos punto al final) 
+    affiliations_split <- paste0(affiliations_split, ".")
+    # Escapar caracteres LaTeX 
+    affiliations_split <- escape_latex(affiliations_split)
+    # Unir con salto de línea LaTeX 
+    affiliations_text <- paste(affiliations_split, collapse = " \\\\ ")
+    
+    bloque <- paste0(
+      "\\begin{quote}\n",
+      "\\textbf{", escape_latex(df$Title[i]), "} \\\\ \n",
+      "\\textit{Presenter: }", escape_latex(df$Presenter[i]), "\\\\ \n",
+      "\\textit{Authors: }", escape_latex(df$Authors[i]), "\\\\ \n",
+      "\\textit{Affiliations: } \\\\ \n",
+      affiliations_text, "\n",
+      "\n",
+      "\\textit{Abstract: } \\\\ \n",
+      abstract_text, "\n",
+      "\\end{quote}\n\n"
+    )
+    cat(knitr::asis_output(bloque))
+  }
+}
+
+```
+
+\newpage
+
+## Distribución de los pósters
+
+### Sesión de Pósters 1 & Coffee Break
+
+```{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+posters_s1 <- read_sheet(url, sheet = "Posters_S1")
+
+# Convertir *texto* en \textit{texto} dentro de la columna 3 (Título)
+posters_s1$Título <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", posters_s1$Título)
+
+# Generar tabla en LaTeX
+kable(posters_s1, format = "latex", booktabs = TRUE, longtable = TRUE, escape = FALSE) %>%
+  kable_styling(latex_options = c("hold_position"), font_size = 8) %>% 
+  column_spec(1, width = "1cm") %>% # Número
+  column_spec(2, width = "3cm") %>% # Ponente
+  column_spec(3, width = "7cm") %>% # Título (ya con \textit{})
+  column_spec(4, width = "5cm") %>% # Laboratorio
+  row_spec(0, bold = TRUE)
+
+```
+
+\newpage
+
+### Sesión de Pósters 2 & Coffee Break
+
+```{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+posters_s2 <- read_sheet(url, sheet = "Posters_S2")
+
+# Convertir *texto* en \textit{texto} dentro de la columna 3 (Título)
+posters_s2$Título <- gsub("\\*(.*?)\\*", "\\\\textit{\\1}", posters_s2$Título)
+
+# Generar tabla en LaTeX
+kable(posters_s2, format = "latex", booktabs = TRUE, longtable = TRUE, escape = FALSE) %>%
+  kable_styling(latex_options = c("hold_position"), font_size = 8) %>% 
+  column_spec(1, width = "1cm") %>% # Número
+  column_spec(2, width = "3cm") %>% # Ponente
+  column_spec(3, width = "7cm") %>% # Título (ya con \textit{})
+  column_spec(4, width = "5cm") %>% # Laboratorio
+  row_spec(0, bold = TRUE)
+```
+
+\newpage
+
+## Resumen de las sesiones de pósters
+
+```{r, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+# Combinar las tablas de orden 
+orden_posters <- bind_rows( 
+  posters_s1 %>% rename(PosterNumber = 1, Presenter = 2), 
+  posters_s2 %>% rename(PosterNumber = 1, Presenter = 2) )
+
+# solo posters
+poster_abstracts <- abstracts %>% 
+  filter(Participation =="Poster presentation")
+
+#Unir informacion
+poster_abstracts <- left_join(poster_abstracts, 
+          dplyr::select(orden_posters, Presenter, PosterNumber), by ="Presenter")
+
+# Supongamos que tu columna Group tiene valores como:
+# "Cancer Genetics and Bioinformatics Lab (Dr Daniela Robles)"
+
+grupos_posters <- split(poster_abstracts, poster_abstracts$Group)
+
+for(nombre_grupo in names(grupos_posters)){
+  # Extraer nombre del laboratorio y responsable
+  lab <- str_trim(str_remove(nombre_grupo, "\\(.*\\)"))   # todo lo que está antes del paréntesis
+  responsable <- str_match(nombre_grupo, "\\((.*)\\)")[,2] # lo que está dentro del paréntesis
+  
+  # Imprimir encabezado con dos líneas
+  cat(knitr::asis_output(paste0(
+    "\\section*{", lab, "} \n",
+    "\\textit{Responsable: ", responsable, "} \n\n"
+  )))
+  
+  # Iterar sobre los abstracts de ese grupo
+  df <- grupos_posters[[nombre_grupo]]
+  # Ordenar por número de póster 
+  df <- df %>% arrange(PosterNumber)
+  
+  for(i in 1:nrow(df)){
+     # Limpieza de saltos de línea para evitar cortes 
+    abstract_text <- gsub("\r|\n", " ", df$Abstract[i])
+    # Aplicar escape_latex al abstract completo 
+    abstract_text <- escape_latex(abstract_text)
+    
+    # Procesar afiliaciones: separar por número 
+    affiliations_raw <- df$Affiliations[i] 
+    # Dividir por punto y coma 
+    affiliations_split <- unlist(strsplit(affiliations_raw, ";")) 
+   # Limpiar espacios a
+    ffiliations_split <- trimws(affiliations_split)
+    # Reemplazar ; por . (ya que hicimos split, solo agregamos punto al final) 
+    affiliations_split <- paste0(affiliations_split, ".")
+    # Escapar caracteres LaTeX 
+    affiliations_split <- escape_latex(affiliations_split)
+    # Unir con salto de línea LaTeX 
+    affiliations_text <- paste(affiliations_split, collapse = " \\\\ ")
+    
+    bloque <- paste0(
+      "\\begin{quote}\n",
+      "\\textbf{Poster ", df$PosterNumber[i], ": ", df$Title[i], "} \\\\ \n",
+      "\\textbf{", df$Title[i], "} \\\\ \n",
+      "\\textit{Presenter: }", df$Presenter[i], "\\\\ \n",
+      "\\textit{Authors: }", df$Authors[i], "\\\\ \n",
+      "\\textit{Affiliations: } \\\\ \n",
+      affiliations_text, "\n",
+      "\n",
+      "\\textit{Abstract: } \\\\ \n",
+      abstract_text, "\n",
+      "\\end{quote}\n\n"
+    )
+    cat(knitr::asis_output(bloque))
+  }
+}
+
+
+```
+
+\newpage
+
+\begin{flushbottom}
+\vspace*{\fill}
+\begin{center}
+\includegraphics[width=0.25\textwidth]{logo.png} % Ajusta el nombre y tamaño del archivo del logo
+\hspace{1cm}
+\parbox{0.7\textwidth}{
+\textit{El comité organizador les desea que disfruten de los Días Académicos 2026, gracias por su confianza y apoyo.}
+}
+\end{center}
+\vspace*{\fill}
+
+
+\begin{center}
+\small
+\textit{Este libro de códigos fue realizado por Dra. Evelia Lorena Coss Navarrete, con ayuda de Copilot Microsoft.  
+El código se encuentra disponible libremente en el repositorio \href{https://github.com/usuario/repositorio}{GitHub X}.}
+\end{center}
+\end{flushbottom}
+
+

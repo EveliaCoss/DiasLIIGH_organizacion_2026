@@ -1,0 +1,21 @@
+% Letra Arial
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Estilo con logo
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\pagestyle{fancy}
+
+% Limpia solo los encabezados
+\fancyhead{} 
+
+% Mantén el pie de página como quieras (ejemplo: número centrado)
+\fancyfoot[C]{\thepage}
+
+% Logo en el encabezado derecho
+\fancyhead[R]{\includegraphics[width=0.15\textwidth]{logo.png}}
+
+%  Impresion de guiones bajos, tal cual estan
+\usepackage[strings]{underscore}

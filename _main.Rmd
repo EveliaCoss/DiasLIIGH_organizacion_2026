@@ -1,0 +1,57 @@
+---
+title: "Libro de Conferencias"
+author: "Comité Organizador"
+output:
+  bookdown::pdf_book:
+    toc: true
+    number_sections: true
+---
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+```
+
+
+## Comité organizador
+
+```{r, echo=FALSE}
+organizadores <- read_excel("plantilla_libro_conferencias.xlsx", sheet = "Organizadores")
+kable(organizadores, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+## Objetivo de los días académicos
+
+La segunda edición de los Días Académicos (19 y 20 de febrero de 2024) tiene el objetivo de difundir las investigaciones realizadas en el Laboratorio Internacional de Investigación sobre el Genoma Humano (LIIGH) de la UNAM.
+
+Durante estos días académicos, se imparten conferencias representativas de todos los grupos de investigación activos de nuestra entidad, abordando los avances logrados en sus respectivas áreas. Las áreas de investigación activas en el LIIGH incluyen: genómica de poblaciones, genética del cáncer, paleogenómica, biología de sistemas, medicina de precisión, estadística, bioinformática, ecología y evolución. También se cuenta con dos sesiones de pósters académicos elaborados por estudiantes de todos los niveles, así como posdoctorantes que realizan actividades académicas en el LIIGH.
+
+## Actividades
+
+```{r}
+actividades <- read_excel("plantilla_libro_conferencias.xlsx", sheet = "Actividades")
+kable(actividades, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+## Abstracts
+
+```{r}
+abstracts <- read_excel("plantilla_libro_conferencias.xlsx", sheet = "Abstracts")
+
+for(i in 1:nrow(abstracts)){
+  cat("#### ", abstracts$Título[i], "\n\n")
+  cat("**Autores:** ", abstracts$Autores[i], "\n\n")
+  cat(abstracts$Resumen[i], "\n\n")
+}
+```
+
+
+
+
+<!--chapter:end:libroabstracts.Rmd-->
+
