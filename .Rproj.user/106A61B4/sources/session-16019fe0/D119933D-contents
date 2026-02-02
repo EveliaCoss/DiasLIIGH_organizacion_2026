@@ -8,19 +8,18 @@ El flujo de trabajo integra **R**, **HTML** y **LaTeX** para asegurar un product
 ## 🚀 Flujo de trabajo
 
 1. **Preparar datos**  
-   - Colocar la base de abstracts en `data/`.
-   - Ejecutar los scripts en `R/` para limpiar y estructurar la información.
+   - Colocar la base de abstracts en un `google Sheet` con 7 hojas. Ejemplo: [DiasLIIGH2026_LibroAbstracts](https://docs.google.com/spreadsheets/d/1hYW6SBrx5sdkNRPOU3al6SjYELW1x4doU9S4TSiwkwI/edit?usp=sharing)
+      1) `Organizadores:` Lista de organizadores y actividades
+      2) `Programa_D1:` Programa del día 1 del evento
+      3) `Programa_D2:` Programa del día 2 del evento
+      4) `EventoSocial:` Actividades recreativas     
+      5) `Abstracts:` Todos los abstract participantes clasificados por el tipo de actividad (columna Participation: Oral presentation o Poster presentation)    
+      6) `Posters_S1:` Programa de los póster para la sesión 1 del día 1.
+      7) `Posters_S1:` Programa de los póster para la sesión 2 del día 2.
 
-2. **Generar contenido intermedio**  
-   - Exportar tablas y listas en formatos compatibles.
-   - Revisar visualizaciones en `html/`.
-
-3. **Compilar libro en LaTeX**  
-   - Usar el documento maestro en `latex/`.
-   - Integrar automáticamente los resultados procesados.
-   - Compilar con `pdflatex` o `xelatex` para obtener el PDF final.
-
----
+2. **Compilar libro en LaTeX**  
+   - Exportar tablas y listas en formatos compatibles empleando el script `index.Rmd`.
+   - Revisar visualizaciones al renderizar el script `index.Rmd` en PDF.
 
 ## 📖 Requisitos
 
@@ -28,9 +27,6 @@ El flujo de trabajo integra **R**, **HTML** y **LaTeX** para asegurar un product
   - `tidyverse`, `knitr`, `rmarkdown`, `xtable`
 - **LaTeX** (TeX Live o MikTeX actualizado).
 - **Pandoc** para conversiones entre R Markdown y LaTeX.
-- Navegador web para revisión de archivos HTML.
-
----
 
 ## 📝 Contribuciones
 
@@ -38,13 +34,9 @@ El flujo de trabajo integra **R**, **HTML** y **LaTeX** para asegurar un product
 - Usar *pull requests* para sugerir mejoras.
 - Mantener consistencia bilingüe (español/inglés) en títulos y descripciones.
 
----
-
 ## 📌 Créditos
 
 Este proyecto es coordinado por el **Laboratorio Internacional de Investigación sobre el Genoma Humano (LIIGH-UNAM)**, con el apoyo de la comunidad académica en la organización de los *Días Académicos LIIGH 2026*.
-
----
 
 ## 📄 Licencia
 
