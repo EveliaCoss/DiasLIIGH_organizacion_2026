@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.30)  2 FEB 2026 17:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.30)  2 FEB 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [5]
-Overfull \hbox (7.10878pt too wide) in paragraph at lines 260--260
+Overfull \hbox (7.10878pt too wide) in paragraph at lines 258--258
 []|\TU/Arial(0)/b/n/10 Horario|  
  []
 
@@ -1117,9 +1117,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 287.
+(Font)              scaled to size 10.0pt on input line 285.
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 290.
+(Font)              scaled to size 10.0pt on input line 288.
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1190,7 +1190,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [13]
-Underfull \hbox (badness 1033) in paragraph at lines 393--398
+Underfull \hbox (badness 1033) in paragraph at lines 391--396
 \TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
  []
 
@@ -1254,7 +1254,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [19]
-Underfull \hbox (badness 1092) in paragraph at lines 487--492
+Underfull \hbox (badness 1092) in paragraph at lines 485--490
 \TU/Arial(0)/m/n/10 9: Université Paris-Saclay, CNRS, INRIA, Laboratoire Interdisciplinaire des Sciences du
  []
 
@@ -1369,18 +1369,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 657.
+(Font)              scaled to size 8.0pt on input line 655.
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 661.
+(Font)              scaled to size 8.0pt on input line 659.
 
-Overfull \hbox (1.77382pt too wide) in paragraph at lines 661--661
+Overfull \hbox (1.77382pt too wide) in paragraph at lines 659--659
  []|\TU/Arial(0)/b/n/8 Número|
  []
 
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 676.
+(Font)              scaled to size 8.0pt on input line 668.
 
-Overfull \hbox (33.48904pt too wide) in alignment at lines 659--703
+Overfull \hbox (33.48904pt too wide) in alignment at lines 657--684
  [] [] [] [] 
  []
 
@@ -1394,12 +1394,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [31]
-Overfull \hbox (1.77382pt too wide) in paragraph at lines 714--714
+Overfull \hbox (1.77382pt too wide) in paragraph at lines 695--695
  []|\TU/Arial(0)/b/n/8 Número|
  []
 
 
-Overfull \hbox (33.48904pt too wide) in alignment at lines 712--758
+Overfull \hbox (33.48904pt too wide) in alignment at lines 693--720
  [] [] [] [] 
  []
 
@@ -1515,7 +1515,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [42]
-Underfull \hbox (badness 1033) in paragraph at lines 900--905
+Underfull \hbox (badness 1033) in paragraph at lines 862--867
 \TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
  []
 
@@ -1559,7 +1559,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [46]
-Underfull \hbox (badness 1033) in paragraph at lines 951--958
+Underfull \hbox (badness 1033) in paragraph at lines 913--920
 \TU/Arial(0)/m/n/10 1: International Laboratory for Human Genome Research (LIIGH), Universidad Nacional
  []
 
@@ -1713,7 +1713,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.45168pt}.
 
 [61]
-Underfull \hbox (badness 1515) in paragraph at lines 1149--1158
+Underfull \hbox (badness 1515) in paragraph at lines 1111--1120
 []\TU/Arial(0)/b/n/10 Poster 32: Identificación taxonómica de murciélago desconocido utilizando datos
  []
 
@@ -1812,9 +1812,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: logo.png Graphic file (type bmp)
 <logo.png>
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1283.
+(Font)              scaled to size 9.0pt on input line 1245.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 1285.
+(Font)              scaled to size 9.0pt on input line 1247.
 File: logo.png Graphic file (type bmp)
 <logo.png>
 
@@ -1831,10 +1831,10 @@ L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18969 strings out of 470190
- 344069 string characters out of 5478034
- 920852 words of memory out of 5000000
- 47275 multiletter control sequences out of 15000+600000
+ 18965 strings out of 470190
+ 343987 string characters out of 5478034
+ 921852 words of memory out of 5000000
+ 47271 multiletter control sequences out of 15000+600000
  631484 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,12n,116p,2360b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -54,7 +54,9 @@ Durante estas jornadas se presentarán **conferencias representativas de todos l
 
 Además, el programa incluye **dos sesiones de pósters académicos**, elaborados por estudiantes de distintos niveles de formación y por posdoctorantes que realizan actividades de investigación en nuestra entidad, fortaleciendo así la participación y el intercambio académico en todos los niveles.
 
-![Imagen representativa. Te esperamos para la Foto grupal el viernes 6 de febrero, 2026 a las 12:30 h](foto_grupo.jpg){width=300}
+![](foto_grupo.jpg){width=300}
+
+Imagen representativa. Te esperamos para la Foto grupal el viernes 6 de febrero, 2026 a las 12:30 h
 
 \newpage
 
@@ -271,7 +273,9 @@ kable(posters_s1, format = "latex", booktabs = TRUE, longtable = TRUE, escape = 
   column_spec(2, width = "3cm") %>% # Ponente
   column_spec(3, width = "7cm") %>% # Título (ya con \textit{})
   column_spec(4, width = "5cm") %>% # Laboratorio
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE) %>% 
+# color en filas
+row_spec(seq(2, nrow(posters_s1), 2), background = "#F0F0F0") # filas pares con color
 
 ```
 
@@ -292,7 +296,10 @@ kable(posters_s2, format = "latex", booktabs = TRUE, longtable = TRUE, escape = 
   column_spec(2, width = "3cm") %>% # Ponente
   column_spec(3, width = "7cm") %>% # Título (ya con \textit{})
   column_spec(4, width = "5cm") %>% # Laboratorio
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE) %>% 
+# color en filas
+row_spec(seq(2, nrow(posters_s1), 2), background = "#F0F0F0") # filas pares con color
+
 ```
 
 \newpage
